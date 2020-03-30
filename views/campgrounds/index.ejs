@@ -1,0 +1,47 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			
+		
+		
+	<h2>
+		WELCOME TO CAMPGROUND PAGE!!
+	</h2>
+		<p>
+			view our popular campgrounds all over the world!!
+		</p>
+			<p>
+				<a class="btn btn-primary btn-md" href="/campgrounds/new">add new campground</a>
+			</p>
+			
+		</div>
+	</header>
+			
+
+<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		
+	
+	<% campgrounds.forEach(function(campgrounds){  %>
+	<div class="col-lg-auto col-md-auto col-sm-auto">
+		<div class="thumbnail">
+				<img src="<%= campgrounds.image %>">
+			<div class="caption">
+				<h5><%= campgrounds.name %></h5>	
+				<p>
+					<a href="/campgrounds/<%= campgrounds._id %>" class="btn btn-primary">more info</a>
+				</p>
+			</div>		
+		</div>
+	</div>
+
+
+
+	<% });  %>
+	
+	</div>
+</div>
+
+
+<%- include("../partials/footer") %>
