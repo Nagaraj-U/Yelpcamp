@@ -25,7 +25,7 @@ app.use(express.static(__dirname + "/public"))  //to add css file main.css
 app.use(methodOverride("_method"));
 app.use(flash());
 
-//seed the DB
+
 //seedDB();
 
 app.use(require("express-session")({
