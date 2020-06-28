@@ -9,4 +9,4 @@ TO SET UP PROJECT :
 
 2. install node dependencies(package.json) and database setup(mongoDB)
 
-3. type nodemon or node app.js in terminal
+3. Run nodemon or node app.js in terminal
