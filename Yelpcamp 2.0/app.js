@@ -4,6 +4,7 @@ const app = express()
 const path = require("path")
 const Campground = require("./models/campground")
 
+
 mongoose.connect('mongodb://localhost:27017/yelpcamp_v2',{useNewUrlParser: true, useUnifiedTopology : true ,useCreateIndex:true});
 const db = mongoose.connection;
 
