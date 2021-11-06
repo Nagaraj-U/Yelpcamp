@@ -1,6 +1,7 @@
 var Campground=require("../models/campground")
 var Comment=require("../models/comment")
 var middlewareObj={};
+
 middlewareObj.checkCampgroundOwnership=function checkCampgroundOwnership(req,res,next){    //ADD AS MIDDLEWARE IS UPDATE AND DELETE AND EDIT
         if(req.isAuthenticated()){
             Campground.findById(req.params.id, function(err,foundCampground){
